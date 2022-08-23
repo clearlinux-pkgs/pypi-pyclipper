@@ -4,7 +4,7 @@
 #
 Name     : pypi-pyclipper
 Version  : 1.3.0.post3
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/45/9e/0ad12b045017ab57a05844084d376569a023c604b1061065c604fa3bf953/pyclipper-1.3.0.post3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/45/9e/0ad12b045017ab57a05844084d376569a023c604b1061065c604fa3bf953/pyclipper-1.3.0.post3.tar.gz
 Summary  : Cython wrapper for the C++ translation of the Angus Johnson's Clipper library (ver. 6.4.2)
