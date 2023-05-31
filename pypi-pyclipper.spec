@@ -5,7 +5,7 @@
 #
 Name     : pypi-pyclipper
 Version  : 1.3.0.post4
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/dd/03/09e2415b72b470851588dfc7c9b7b4f410a79ed8e2c6c1fb25dfec789b70/pyclipper-1.3.0.post4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/dd/03/09e2415b72b470851588dfc7c9b7b4f410a79ed8e2c6c1fb25dfec789b70/pyclipper-1.3.0.post4.tar.gz
 Summary  : Cython wrapper for the C++ translation of the Angus Johnson's Clipper library (ver. 6.4.2)
@@ -15,6 +15,11 @@ Requires: pypi-pyclipper-license = %{version}-%{release}
 Requires: pypi-pyclipper-python = %{version}-%{release}
 Requires: pypi-pyclipper-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(cython)
+BuildRequires : pypi(setuptools)
+BuildRequires : pypi(setuptools_scm)
+BuildRequires : pypi(setuptools_scm_git_archive)
+BuildRequires : pypi(wheel)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -66,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683045077
+export SOURCE_DATE_EPOCH=1685551703
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
