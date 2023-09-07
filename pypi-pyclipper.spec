@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-pyclipper
-Version  : 1.3.0.post4
-Release  : 15
-URL      : https://files.pythonhosted.org/packages/dd/03/09e2415b72b470851588dfc7c9b7b4f410a79ed8e2c6c1fb25dfec789b70/pyclipper-1.3.0.post4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/dd/03/09e2415b72b470851588dfc7c9b7b4f410a79ed8e2c6c1fb25dfec789b70/pyclipper-1.3.0.post4.tar.gz
+Version  : 1.3.0.post5
+Release  : 16
+URL      : https://files.pythonhosted.org/packages/1b/3d/e5b5ff36b24f3fc9b962a68ce4f6932ab698b8ba860261f402be37b85d17/pyclipper-1.3.0.post5.tar.gz
+Source0  : https://files.pythonhosted.org/packages/1b/3d/e5b5ff36b24f3fc9b962a68ce4f6932ab698b8ba860261f402be37b85d17/pyclipper-1.3.0.post5.tar.gz
 Summary  : Cython wrapper for the C++ translation of the Angus Johnson's Clipper library (ver. 6.4.2)
 Group    : Development/Tools
 License  : MIT
@@ -60,10 +60,10 @@ python3 components for the pypi-pyclipper package.
 
 
 %prep
-%setup -q -n pyclipper-1.3.0.post4
-cd %{_builddir}/pyclipper-1.3.0.post4
+%setup -q -n pyclipper-1.3.0.post5
+cd %{_builddir}/pyclipper-1.3.0.post5
 pushd ..
-cp -a pyclipper-1.3.0.post4 buildavx2
+cp -a pyclipper-1.3.0.post5 buildavx2
 popd
 
 %build
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685551703
+export SOURCE_DATE_EPOCH=1694100782
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
